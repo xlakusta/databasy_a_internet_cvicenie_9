@@ -1,0 +1,210 @@
+/* topbar.html */
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  min-width: 400px;
+  background-color: rgb(200, 24, 1);
+  border-radius: 25px;
+  align-items: center;
+}
+.head img {
+    margin-left: 10px;
+     height: 60px;
+}
+.head a {
+  margin-left: 10px;
+color: black;
+text-decoration-line: none;
+font-size: 30px;
+}
+.thame {
+     display: flex;
+     margin-right: 10px;
+}
+.thame button {
+     
+     width: 60px;
+     height: 60px;
+     cursor: pointer;
+     transition-duration: 0.4s;
+}
+#sun {
+    background-color: rgb(200, 24, 1);
+     background-image: url( 'img/sun-svgrepo-com.svg' );
+     background-size: 60px;
+     Border: none
+
+}
+#moon {
+    background-color: rgb(200, 24, 1);
+     background-image: url( 'img/moon-svgrepo-com.svg' );
+     background-size: 60px;
+     Border: none
+}
+#sun:hover {
+  background-color: #C81801; 
+}
+#moon:hover {
+  background-color: #860000; 
+}
+
+
+/*main menu*/
+
+.nav{
+    
+  background-color: rgba(200, 24, 1, 0.736);
+  border-radius: 25px;
+
+}
+.nav div{
+    display: flex;
+    justify-content:center;
+}
+.nav div button{
+    cursor: pointer;
+}
+
+
+
+/*table*/
+
+table, th, td, tr {
+  border: 1px solid;
+  padding: 10px;
+}
+
+/*list*/
+
+ol {
+  background: salmon;
+  padding: 20px;
+}
+
+ol li {
+  background: mistyrose;
+  color: darkred;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+
+/*form*/
+
+form {
+  background: rgb(219, 58, 0);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+form input[type="text"],
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+form input[type="submit"] {
+  background: rgb(139, 44, 0);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background: rgb(255, 136, 0);
+}
+
+form input,
+form button {
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: rgb(139, 44, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: rgb(255, 136, 0);
+}
+
+/* dark theme */
+body.dark {
+  background-color: #121212;
+  color: #e6e6e6;
+}
+
+body.dark .nav {
+  background-color: rgba(120, 15, 0, 0.85);
+  color: #e6e6e6;
+}
+
+body.dark table,
+body.dark th,
+body.dark td,
+body.dark tr {
+  border-color: #666;
+}
+
+body.dark form {
+  background: #2a1a16;
+}
+
+body.dark form input,
+body.dark form select,
+body.dark form textarea {
+  background: #1e1e1e;
+  color: #e6e6e6;
+  border: 1px solid #555;
+}
+
+body.dark form button,
+body.dark form input[type="submit"] {
+  background: #8b2c00;
+  color: #fff;
+}
+
+body.dark form button:hover,
+body.dark form input[type="submit"]:hover {
+  background: #ff8800;
+}
+
+body.dark ol {
+  background: #3a1d17;
+}
+
+body.dark ol li {
+  background: #2a2a2a;
+  color: #ffb3a3;
+}
+
+body.dark .left {
+  background: #3a1d17;
+  border-left-color: #555;
+}
+
+body.dark table button {
+  background: #2a2a2a;
+  color: #e6e6e6;
+  border: 1px solid #666;
+  cursor: pointer;
+}

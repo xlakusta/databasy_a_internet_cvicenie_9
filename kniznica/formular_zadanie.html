@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="formular_zadanie.css">
+    <script src="app.js" defer></script>
+    <script src="formular_zadanie.js" defer></script>
+
+    <title>Notepader</title>
+</head>
+<body>
+    <div class = "main">
+    <div class="nav">
+        <div><h1>
+            Zadanie
+        </h1></div>
+
+        <div>
+<form id ="myForm">
+    <label for ="name">Meno a Priezvisko:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="phone">Telefón:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="birthday">Dátum narodenia:</label>
+    <input type="date" id="birthday" name="birthday">
+
+    <label for="course">Kurs:</label>
+    <select id="course" name="course">
+        <option value=" "> </option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+    </select>
+
+
+    <label for="uroven">Uroven:</label>
+    <input type="radio" id="beginner" name="urov" value="Beginner">
+  <label class="radio-label" for="beginner">Beginner</label><br>
+  <input type="radio" id="intermediate" name="urov" value="Intermediate">
+  <label class="radio-label" for="intermediate">Intermediate</label><br>
+  <input type="radio" id="advanced" name="urov" value="Advanced">
+  <label class="radio-label" for="advanced">Advanced</label>
+
+  <label for="other">Poznámka:</label>
+  <textarea id="other" name="other" rows="3" cols="50"></textarea>
+
+  <label for="podt">Suhlas s podmienkami:</label>
+  <input type="checkbox" id="podt" name="podt" value="1">
+
+  <input type="submit" value="Submit">
+</form>
+        </div>
+    
+    <div  class = "left">
+        <p id = "outname"></p>
+        <p id = "outemail"></p>
+        <p id = "outcourse"></p>
+        <p id = "outurov"></p>
+        <p id = "outother"></p>
+    </div>
+    
+</div>
+</body>
